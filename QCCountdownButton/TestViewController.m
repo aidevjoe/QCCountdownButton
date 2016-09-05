@@ -38,7 +38,7 @@
     btn.disabledBackgroundColor = [UIColor grayColor];
     
     // 倒计时的时长
-    btn.totalSecond = 60;
+    btn.totalSecond = 5;
     
     [self.view addSubview:btn];
     
