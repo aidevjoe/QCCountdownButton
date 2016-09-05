@@ -11,7 +11,9 @@
 
     
     QCCountdownButton *btn = [QCCountdownButton countdownButton];
-    btn.title = @"获取验证码";
+    
+    //最初状态的文字
+    btn.originlTitle = @"获取验证码";
     
     [btn setFrame:CGRectMake(0, 0, 100, 30)];
     btn.center = self.view.center;
