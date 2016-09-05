@@ -8,6 +8,13 @@
 
 
 ## 使用
+>推荐您使用CocoaPods进行安装, 只需添加
+>
+>pod 'QCCountdownButton'
+>并运行 pod install 即可安装最新版
+>
+>或者下载项目, 将项目中的 QCCountdownButton 目录, 拖入到您的项目中即可
+
 
     
     QCCountdownButton *btn = [QCCountdownButton countdownButton];
