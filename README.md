@@ -2,7 +2,7 @@
 
 在我们开发中常常会遇到注册、验证信息的需求这个时候我们需要向服务器发送请求来获得验证码,通常需要进行获取倒计时操作.多个地方用到时候就会导致代码杂乱不堪,这个库的出现就是解决这个问题,以至于简化你的操作,把注意放在代码逻辑上即可
 
-## Gif实例
+## Gif示例
 
 ![image](https://github.com/Joe0708/QCCountdownButton/blob/master/Demo.gif?raw=true)
 
@@ -37,6 +37,7 @@
         btn.title = @"重新获取验证码";
     }];
 
+---
 如果你有任何使用问题,请在这里[提问](https://github.com/Joe0708/QCCountdownButton/issues/new)
 
 Qq群: 248458280
