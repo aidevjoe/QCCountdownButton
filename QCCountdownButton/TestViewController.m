@@ -1,25 +1,25 @@
 //
-//  ViewController.m
+//  TestViewController.m
 //  QCCountdownButton
 //
 //  Created by Joe on 16/9/5.
 //  Copyright © 2016年 Joe. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "QCCountdownButton.h"
 #import "TestViewController.h"
+#import "QCCountdownButton.h"
 
-@interface ViewController ()
-
+@interface TestViewController ()
 @property (nonatomic, strong) QCCountdownButton *countdownButton;
 
 @end
 
-@implementation ViewController
+@implementation TestViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor redColor];
     
     QCCountdownButton *btn = [QCCountdownButton countdownButton];
     
@@ -32,7 +32,7 @@
     btn.titleLabelFont = [UIFont systemFontOfSize:13];
     
     // 普通状态下的背景颜色
-    btn.nomalBackgroundColor = [UIColor redColor];
+    btn.nomalBackgroundColor = [UIColor blueColor];
     
     // 失效状态下的背景颜色
     btn.disabledBackgroundColor = [UIColor grayColor];
@@ -51,17 +51,10 @@
     } onFinishedBlock:^{  // 倒计时完毕
         btn.title = @"重新获取验证码";
     }];
-    
 }
 
-- (void)viewDidDisappear:(BOOL)animated{
-    [super viewDidDisappear:animated];
-    
+- (void)dealloc{
     [self.countdownButton stopTime];
-}
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self.navigationController pushViewController:[TestViewController new] animated:YES];
 }
 
 

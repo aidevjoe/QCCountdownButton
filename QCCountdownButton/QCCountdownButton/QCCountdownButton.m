@@ -71,6 +71,7 @@
                 self.second = self.totalSecond;
                 self.userInteractionEnabled = YES;
                 self.backgroundColor = self.nomalBackgroundColor;
+                [self setTitle:self.originlTitle forState:UIControlStateNormal];
             }
         }
     }
@@ -93,7 +94,13 @@
 }
 
 - (void)setTitle:(NSString *)title{
+    _title = title;
     [self setTitle:title forState:UIControlStateNormal];
+}
+
+- (void)setOriginlTitle:(NSString *)originlTitle{
+    _originlTitle = originlTitle;
+    [self setTitle:originlTitle forState:UIControlStateNormal];
 }
 
 - (void)setTitleLabelFont:(UIFont *)titleLabelFont{

@@ -26,6 +26,12 @@
 @property (nonatomic, copy) NSString *title;
 
 /**
+ *  原始文字 ,  用于停止计时后恢复状态
+ */
+@property (nonatomic, strong) NSString *originlTitle;
+
+
+/**
  *  设置文字字体
  */
 @property (nonatomic, strong) UIFont *titleLabelFont;
